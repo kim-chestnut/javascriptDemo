@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-image:url(image/bg.jpg);
+    background-size:100% 100%;
+}
+.wrapper{
+    width:400px;
+    height:600px;
+    position:relative;
+    margin:20px auto;
+    border:2px solid black;
+    overflow:hidden;
+    border-radius:5px;
+    border:0;
+    z-index:1;
+    /* border:2px solid red; */
+}
+.top{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    /* border:1px solid red; */
+    z-index:2; 
+}
+.start{
+    width:150px;
+    height:34px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate3d(-50%,-50%,0);
+    border:3px solid #000;
+    text-align:center;
+    line-height:34px;
+    border-radius:20px;
+    background:#9922ff; 
+    box-shadow: 0 1px 5px #000;
+    border:0;  
+}
+.start a{
+    text-decoration: none;
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
+
+}
+.main{
+    width:100%;
+    position:relative;
+    top:-150px;
+}
+.row{
+    width:400px;
+    height:150px;
+}
+.row div{
+    width:100px;
+    height:150px;
+    float:left;
+    border:1px solid black;
+    cursor:pointer;
+    background-color:#bbb;
+}
+.gameover{
+    display:none;
+    z-index:3;     
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    /* border:1px solid red; */
+}
+.gameover .gameover-image{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate3d(-50%,-50%,0);
+    width:300px;
+    height:200px;
+    /* border:1px solid red; */
+    border-radius:5px;
+    background-image:url(image/gameover.jpg);
+    background-size: 100% 100%;
+}
+.gameover-image .btn{
+    position:absolute;
+    top:0;
+    right:0;
+    width:20px;
+    height:20px;
+    background-image:url(image/closeBtn.png);
+    background-size: 100% 100%;
+    cursor:pointer;
+}
+.gameover-image #score{
+    width:50px;
+    height:40px;
+    position:absolute;
+    top:40%;
+    left:45%;
+    /* border:1px solid red; */
+    text-align:center;
+    line-height:40px;
+    color:#fff;
+    font-size:20px;
+}
