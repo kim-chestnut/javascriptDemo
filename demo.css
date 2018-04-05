@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-    background-image:url(image/bg.jpg);
+    background-image:url(bg.jpg);
     background-size:100% 100%;
 }
 .wrapper{
@@ -86,7 +86,7 @@ body{
     height:200px;
     /* border:1px solid red; */
     border-radius:5px;
-    background-image:url(image/gameover.jpg);
+    background-image:url(gameover.jpg);
     background-size: 100% 100%;
 }
 .gameover-image .btn{
@@ -95,7 +95,7 @@ body{
     right:0;
     width:20px;
     height:20px;
-    background-image:url(image/closeBtn.png);
+    background-image:url(closeBtn.png);
     background-size: 100% 100%;
     cursor:pointer;
 }
